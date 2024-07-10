@@ -187,13 +187,11 @@ img.displaySlide {
   justify-content: center;
   align-items: center;
   background-color: #000000;
-}
-
-.title2 {
-  padding: 25px;
+  padding-top: 20px;
 }
 
 .title2 h2 {
+  padding-bottom: 20px;
   text-align: center;
   font-family: "Metal Mania", system-ui;
   font-weight: 400;
