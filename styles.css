@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-
+body {
+  background-image: url('images/Dany.jpg');
+}
 
 .main-title {
   background-image: url("/images/Castle.png");
@@ -183,27 +185,41 @@ img.displaySlide {
 
 .details {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  padding-top: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  background: #000000;
+  padding: 0px 25px;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0 rgb(0 0 0 / 40%);
+  font-size: 1.125rem;
+  min-height: 375px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(77, 77, 77);
 }
 
-.title2 h2 {
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: "Metal Mania", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  color: white;
+.side-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.side-image img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
 }
 
 .Features {
-  text-align: center;
-  width: 600px;
+  flex: 1;
+  color: white;
+}
+
+p {
+  text-align: justify;
   font-weight: bold;
   font-style: italic;
-  color: white;
 }
