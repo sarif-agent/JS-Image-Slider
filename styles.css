@@ -3,6 +3,24 @@
   margin: 0;
 }
 
+body {
+  background-color: black;
+}
+
+title {
+  display: flex;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-shadow: rgb(100, 0, 0) 2px 1px;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -13,6 +31,12 @@
 .slider img {
   width: 100%;
   display: none;
+}
+
+.slides {
+  border: 8px solid transparent;
+  padding: 0px;
+  border-image: url(images/Gothic-trees.jpg) 50;
 }
 
 img.displaySlide {
