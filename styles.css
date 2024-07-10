@@ -4,7 +4,7 @@
 }
 
 .main-title {
-  background-image: url("/images/Castle.png");
+  background: url("/images/Castle.png");
 }
 
 body {
@@ -123,7 +123,7 @@ h1 {
 }
 
 .cover {
-  background: linear-gradient(to right, #000000, #414141);
+  background: linear-gradient(to right, #000000, #2c0000);
   padding: 30px;
 }
 
