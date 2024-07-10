@@ -3,12 +3,16 @@
   margin: 0;
 }
 
-body {
-  background-image: url('images/Dany.jpg');
-}
-
 .main-title {
   background-image: url("/images/Castle.png");
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#670000", GradientType=1);
 }
 
 #banner {
@@ -222,4 +226,39 @@ p {
   text-align: justify;
   font-weight: bold;
   font-style: italic;
+}
+
+.set-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.set-button img {
+  width: 50px;
+  padding: 10px;
+}
+
+.set-button button {
+  box-shadow: 6px 4px 6px 2px #8a2a21;
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color: #c62d1f;
+  border-radius: 18px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9e0b00;
+}
+
+.set-button button:hover {
+  background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color: #f24437;
 }
