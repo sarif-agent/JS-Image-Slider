@@ -1,8 +1,3 @@
-// Image Slider
-
-
-
-
 const rain = new Audio("./sounds/Thunderstorm.mp3");
 const Castamere = new Audio("./sounds/Rains-of-Castamere.mp3");
 
@@ -33,6 +28,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
+// Image Slider
 function initializeSlider() {
 
   if (slides.length > 0) {
