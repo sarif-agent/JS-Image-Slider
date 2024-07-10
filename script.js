@@ -1,10 +1,31 @@
 // Image Slider
 
 
+
+
+const rain = new Audio("./sounds/Thunderstorm.mp3");
+const Castamere = new Audio("./sounds/Rains-of-Castamere.mp3");
+
+const myButton = document.querySelector(".main-title button")
 const slides = document.querySelectorAll(".slides img");
 
 let slideIndex = 0;
 let intervalId = null;
+
+// It Works LOL XD
+myButton.addEventListener('click', () => {
+  rain.play();
+  Castamere.play();
+});
+
+function jumpToInfo(elementId) {
+  var element = document.getElementById(elementId);
+
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 document.addEventListener("DOMContentLoaded", initializeSlider);
