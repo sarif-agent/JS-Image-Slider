@@ -194,7 +194,7 @@ img.displaySlide {
   box-shadow: 0.1rem 0.1rem 0.2rem 0 rgb(0 0 0 / 40%);
   font-size: 1.125rem;
   min-height: 375px;
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
   border-color: rgb(77, 77, 77);
 }
