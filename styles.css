@@ -1,25 +1,123 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(to right, #000000, #000000);
 }
 
-title {
+#banner {
   display: flex;
+  justify-content: center;
+  padding-bottom: 125px;
+  margin-bottom: 25px;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 250px;
+  text-align: center;
+
+}
+
+.title img {
+  width: 200px;
+}
+
 
 h1 {
   color: white;
-  text-align: center;
-  padding: 25px;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 800;
+  padding: 2px;
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
   font-style: normal;
-  text-shadow: rgb(100, 0, 0) 2px 1px;
+  text-shadow: rgb(0, 0, 0) 2px 1px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  cursor: default;
 }
+
+.title p {
+  color: white;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: bold;
+  cursor: default;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.info-text {
+  width: 600px;
+  height: 100px;
+  text-align: center;
+}
+
+.info p {
+  color: white;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  cursor: default;
+}
+
+.info p:hover {
+  text-decoration: underline;
+  animation-name: fade;
+}
+
+.info button {
+  margin-top: 70px;
+  padding: 15px 30px;
+  border: 2px solid;
+  border-color: #000000;
+  background: #fbff00;
+  color: #000000;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-family: "Metal Mania", system-ui;
+  font-weight: bold;
+}
+
+.info button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+
+.info button:hover::after {
+  transform: scale(4);
+}
+
+.info button:hover {
+  border-color: #ff0000;
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+
 
 .slider {
   position: relative;
@@ -31,11 +129,12 @@ h1 {
 .slider img {
   width: 100%;
   display: none;
+  pointer-events: none;
 }
 
 .slides {
   border: 8px solid transparent;
-  padding: 0px;
+  padding: 2px;
   border-image: url(images/Gothic-trees.jpg) 50;
 }
 
