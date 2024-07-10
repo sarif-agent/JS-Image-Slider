@@ -8,11 +8,7 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(27, 0, 0, 1) 57%, rgba(103, 0, 0, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#670000", GradientType=1);
+  background-color: rgb(0, 0, 0);
 }
 
 #banner {
