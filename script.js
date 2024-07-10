@@ -1,8 +1,8 @@
 const rain = new Audio("./sounds/Thunderstorm.mp3");
 const Castamere = new Audio("./sounds/Rains-of-Castamere.mp3");
 
-rain.volume = 0.3;
-Castamere.volume = 0.5;
+rain.volume = 0.1;
+Castamere.volume = 0.3;
 
 const myButton = document.querySelector(".main-title button")
 const slides = document.querySelectorAll(".slides img");
