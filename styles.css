@@ -22,15 +22,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
-  height: 250px;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
   text-align: center;
 }
 
 .title img {
-  width: 200px;
+  width: 150px;
 }
-
 
 h1 {
   color: rgb(255, 255, 255);
@@ -39,7 +39,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   text-shadow: rgb(0, 0, 0) 2px 1px;
-  font-size: 50px;
+  font-size: 2.5rem;
   letter-spacing: 5px;
   cursor: default;
 }
@@ -62,8 +62,9 @@ h1 {
 }
 
 .info-text {
-  width: 600px;
-  height: 100px;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
   text-align: center;
 }
 
@@ -80,13 +81,13 @@ h1 {
 }
 
 .info button {
-  margin-top: 70px;
-  padding: 15px 30px;
+  margin-top: 20px;
+  padding: 10px 20px;
   border: 2px solid;
   border-color: #000000;
   background: #fbff00;
   color: #000000;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 3px;
   cursor: pointer;
   border-radius: 30px;
@@ -112,7 +113,6 @@ h1 {
   transition: transform 0.5s ease;
 }
 
-
 .info button:hover::after {
   transform: scale(4);
 }
@@ -130,10 +130,10 @@ h1 {
 
 .slider {
   position: relative;
-  width: 75%;
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
-
 }
 
 .slider img {
@@ -186,9 +186,9 @@ img.displaySlide {
 
 .details {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 70%;
+  flex-direction: column;
+  width: 90%;
+  max-width: 800px;
   margin: auto;
   background: #000000;
   padding: 0px 25px;
@@ -203,9 +203,9 @@ img.displaySlide {
 .side-image {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin: 20px 0;
 }
 
 .side-image img {
@@ -215,7 +215,6 @@ img.displaySlide {
 }
 
 .Features {
-  flex: 1;
   color: white;
 }
 
@@ -258,4 +257,42 @@ p {
 .set-button button:hover {
   background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
   background-color: #f24437;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    width: 100%;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .info button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .slider button {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
 }
